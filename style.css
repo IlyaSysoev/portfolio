@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    /* Тот самый CSS-паттерн без внешних картинок */
+    background-color: #121212;
+    background-image: 
+        linear-gradient(30deg, #1a1a1c 12%, transparent 12.5%, transparent 87%, #1a1a1c 87.5%, #1a1a1c),
+        linear-gradient(150deg, #1a1a1c 12%, transparent 12.5%, transparent 87%, #1a1a1c 87.5%, #1a1a1c),
+        linear-gradient(30deg, #1a1a1c 12%, transparent 12.5%, transparent 87%, #1a1a1c 87.5%, #1a1a1c),
+        linear-gradient(150deg, #1a1a1c 12%, transparent 12.5%, transparent 87%, #1a1a1c 87.5%, #1a1a1c),
+        linear-gradient(60deg, #1a1a1c77 25%, transparent 25.5%, transparent 75%, #1a1a1c77 75%, #1a1a1c77),
+        linear-gradient(60deg, #1a1a1c77 25%, transparent 25.5%, transparent 75%, #1a1a1c77 75%, #1a1a1c77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.portfolio-card {
+    background-color: #161618;
+    border: 2px solid #a62ca6; /* Фиолетовая неоновая рамка */
+    border-radius: 8px;
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.portfolio-card h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+.info-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #f1f1f1;
+}
+
+/* Темные аккуратные блоки вместо белых */
+.fake-input {
+    background-color: #252528;
+    border: 1px solid #3d3d42;
+    color: #e0e0e0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.skills-list {
+    margin: 0;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.skills-list li {
+    margin-bottom: 6px;
+}
+.skills-list li:last-child {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #a62ca6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: background-color 0.2s, transform 0.1s;
+    box-sizing: border-box;
+}
+
+.btn-primary:hover {
+    background-color: #8c238c;
+}
+.btn-primary:active {
+    transform: scale(0.98);
+}
